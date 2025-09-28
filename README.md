@@ -1,5 +1,5 @@
 # 🚀 EUROHUB
-O EuroHub é uma plataforma que conecta colaboradores a desafios estratégicos da Eurofarma, permitindo o envio e acompanhamento de ideias para impulsionar a inovação interna. 
+O **EuroHub** é uma plataforma que *conecta colaboradores a desafios estratégicos da Eurofarma*, permitindo o envio e acompanhamento de ideias para impulsionar a inovação interna. 
 
 O backend do EuroHub foi desenvolvido em **Java**, utilizando o framework **Spring Boot**. 
 
@@ -10,11 +10,11 @@ Este repositório contém **apenas o backend em Java**.
 ## 📌 MER
 ...
 
-## 🐳 Comandos Docker para Executar a API
+## 🐳 Comandos Docker para Executar o Banco de Dados e a API
 
-### Imagem MySQL
+### Docker Image - MySQL
 	
-	```bash
+	bash
 	docker run -d \
 	--name mysql \
 	--rm \
@@ -22,12 +22,12 @@ Este repositório contém **apenas o backend em Java**.
 	-e MYSQL_USER=new_user \
 	-e MYSQL_PASSWORD=my_pwd \
 	-p 3306:3306 \
-	mysql```
+	mysql
 	
 
-### Imagem API
+### Docker Image - API
 	
-	```bash
+	bash
 	docker run -d \
 	--name eurohub-api \
 	--rm \
@@ -38,7 +38,7 @@ Este repositório contém **apenas o backend em Java**.
 	-e DB_DATABASE=api \
 	-e DB_USER=root \
 	-e DB_PASSWORD=root_pwd \
-	givasques1101/eurohub:0.0.1```
+	givasques1101/eurohub:0.0.1
 	
 
 ## 📦 Dependências Utilizadas
@@ -53,33 +53,33 @@ Este repositório contém **apenas o backend em Java**.
 | SpringDoc OpenAPI            | Documentação automática da API (Swagger) |
 
 
-## 🏗️ Camadas do backend e Resumo das Classes
+## 🏗️ Camadas do Backend
 
 ### Controllers
 
-	Recebem requisições HTTP, chamam os serviços correspondentes e retornam respostas para o cliente.
-	Controlam o fluxo da aplicação, mas não contêm lógica de negócio.
+Recebem requisições HTTP, chamam os serviços correspondentes e retornam respostas para o cliente.
+Controlam o fluxo da aplicação, mas não contêm lógica de negócio.
 
 
 ### Services
 
-	Contêm a lógica de negócio da aplicação.
-	Processam dados, aplicam regras de validação e chamam os repositórios para acessar o banco.
+Contêm a lógica de negócio da aplicação.
+Processam dados, aplicam regras de validação e chamam os repositórios para acessar o banco.
 
 ### Repositories
 
-	Responsáveis pela persistência de dados.
-	Fornecem métodos para salvar, atualizar, buscar e deletar entidades no banco de dados.
+Responsáveis pela persistência de dados.
+Fornecem métodos para salvar, atualizar, buscar e deletar entidades no banco de dados.
 
 ### DTOs (Data Transfer Objects)
 
-	Objetos que transportam dados entre Controller e Service, geralmente em requests e responses.
-	Facilitam o encapsulamento e evitam expor diretamente as entidades do banco.
+Objetos que transportam dados entre Controller e Service, geralmente em requests e responses.
+Facilitam o encapsulamento e evitam expor diretamente as entidades do banco.
 
 ### Models
 
-	Representam as entidades do banco de dados, incluindo seus atributos e estados.
-	Cada classe corresponde a uma tabela ou enumeração de status.
+Representam as entidades do banco de dados, incluindo seus atributos e estados.
+Cada classe corresponde a uma tabela ou enumeração de status.
 
 ## 🔗 Endpoints da API
 
@@ -124,7 +124,6 @@ Este repositório contém **apenas o backend em Java**.
 
 
 ## 📁 Estrutura de Pastas e Arquivos
-	```
 		backend/
 		│
 		├─ src/
@@ -189,7 +188,6 @@ Este repositório contém **apenas o backend em Java**.
 		└─ DockerFile
 		│
 		└─ README.md
-	```
 
 ## 🔜 Próximos Passos
 - Autenticação de usuários
