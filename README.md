@@ -7,9 +7,6 @@ Ele é responsável por gerenciar a *lógica de negócios* da plataforma, inclui
 
 Este repositório contém **apenas o backend em Java**.
 
-## 📌 MER
-...
-
 ## 🐳 Comandos Docker para Executar o Banco de Dados e a API
 
 ### Docker Image - MySQL
@@ -181,7 +178,7 @@ Cada classe corresponde a uma tabela ou enumeração de status.
 		│  └─ test/
 		│      └─ ... (testes unitários e de integração)
 		│
-		└─ pom.xml
+		├─ pom.xml
 		├─ compose.yaml
 		├─ DockerFile
 		└─ README.md
