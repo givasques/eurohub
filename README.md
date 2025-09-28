@@ -182,11 +182,8 @@ Cada classe corresponde a uma tabela ou enumeração de status.
 		│      └─ ... (testes unitários e de integração)
 		│
 		└─ pom.xml
-		│
-		└─ compose.yaml
-		│
-		└─ DockerFile
-		│
+		├─ compose.yaml
+		├─ DockerFile
 		└─ README.md
 
 ## 🔜 Próximos Passos
